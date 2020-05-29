@@ -1,4 +1,5 @@
 ﻿using ApexLegendsApp.Services;
+using ApexLegendsApp.Views.MasterDetail;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -13,7 +14,7 @@ namespace ApexLegendsApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MasterDetailMenu());
         }
 
         protected override void OnStart()

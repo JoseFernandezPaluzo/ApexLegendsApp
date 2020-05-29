@@ -15,8 +15,17 @@
     </ItemGroup>
 
     <ItemGroup>
-      <EmbeddedResource Update="Views\MainPage.xaml">
+      <EmbeddedResource Update="PAPELERA\MainPage.xaml">
         <SubType>Designer</SubType>
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Views\MasterDetail\MasterDetailMenu.xaml">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Views\MasterDetail\MasterDetailMenuDetail.xaml">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Views\MasterDetail\MasterDetailMenuMaster.xaml">
         <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       </EmbeddedResource>
       <EmbeddedResource Update="Views\ServerStatusView.xaml">
@@ -34,7 +43,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Update="Views\MainPage.xaml.cs">
+      <Compile Update="PAPELERA\MainPage.xaml.cs">
         <DependentUpon>MainPage.xaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>
