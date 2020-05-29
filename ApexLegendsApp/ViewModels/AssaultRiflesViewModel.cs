@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using ApexLegendsApp.Model;
 using ApexLegendsApp.Services;
+using Xamarin.Forms;
 
 namespace ApexLegendsApp.ViewModels
 {
@@ -10,7 +11,7 @@ namespace ApexLegendsApp.ViewModels
 
         public AssaultRiflesViewModel()
         {
-            _gameDataApiService = new GameDataApiService();
+            _gameDataApiService = DependencyService.Get<IGameDataAPIService>();
         }
 
         private List<Weapon> _weapons;

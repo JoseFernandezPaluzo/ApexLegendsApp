@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ApexLegendsApp.Services;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -17,7 +18,8 @@ namespace ApexLegendsApp
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            //Services Register with DependencyService
+            DependencyService.Register<IGameDataAPIService, GameDataApiService>();
         }
 
         protected override void OnSleep()

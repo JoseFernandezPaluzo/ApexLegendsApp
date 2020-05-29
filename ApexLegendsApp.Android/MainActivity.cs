@@ -5,6 +5,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Xamarin.Forms;
+using ApexLegendsApp.Services;
 
 namespace ApexLegendsApp.Android
 {
@@ -19,7 +21,7 @@ namespace ApexLegendsApp.Android
 
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            LoadApplication(new App());
+            LoadApplication(new App());            
         }
     }
 }
