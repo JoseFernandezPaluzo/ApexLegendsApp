@@ -7,5 +7,6 @@ namespace ApexLegendsApp.Services
     public interface IGameDataAPIService
     {
         Task<List<Weapon>> GetAssaultRifles();
+        Task<List<Consumables>> GetConsumables();
     }
 }

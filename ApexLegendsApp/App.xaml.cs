@@ -21,6 +21,7 @@ namespace ApexLegendsApp
         {
             //Services Register with DependencyService
             DependencyService.Register<IGameDataAPIService, GameDataApiService>();
+            DependencyService.Register<IGameServerStatusService, GameServerStatusService>();
         }
 
         protected override void OnSleep()

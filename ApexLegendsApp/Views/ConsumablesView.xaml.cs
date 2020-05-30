@@ -1,4 +1,4 @@
-using ApexLegendsApp.ViewModels;
+﻿using ApexLegendsApp.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,17 +11,17 @@ using Xamarin.Forms.Xaml;
 namespace ApexLegendsApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ServerStatusView : ContentPage
+    public partial class ConsumablesView : ContentPage
     {
-        public ServerStatusView()
+        public ConsumablesView()
         {
             InitializeComponent();
-            BindingContext = new ServerStatusViewModel();
+            BindingContext = new ConsumablesViewModel();
         }
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            (BindingContext as ServerStatusViewModel).OnAppearing();
+            (BindingContext as ConsumablesViewModel).OnAppearing();
         }
     }
 }
